@@ -1,0 +1,147 @@
+.text-pink{
+	color: #B2279F !important;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.cv-hr{
+	border-top: 1px solid #A9A8A8;
+	border-bottom: 1px solid #fff;
+	margin-top: 0;
+}
+.cv-wrapper {
+	background-color:#342112;
+	padding: 10px;
+}
+@media (min-width: 768px){
+	.cv-wrapper {
+		padding: 2em 0;
+	}
+}
+.cv-container{
+	max-width: 920px;
+	background: #eee;
+}
+.cv-header{
+	background: #E2E2E2;
+}
+.cv-header h1{
+	font-size: 2em;
+	font-weight: 400;
+}
+@media (min-width: 768px){
+	.cv-header h1{
+		font-size: 3.3em;
+	}
+}
+.cv-header h2{
+	color: #555;
+  	font-size: 1em;
+  	font-style: italic;
+  	font-family: 'Georgia';
+  	margin-top: 0;
+}
+@media (min-width: 768px){
+	.cv-header h2{
+	  	font-size: 1.3em;
+	 }
+}
+.cv-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 5.5em;
+  font-weight: 100;
+  line-height: 72px;
+  padding: 0 20px;
+  border-left: 1px solid #ccc;
+  height: 100%;
+}
+@media (min-width: 768px){
+	.cv-close{
+	  font-size: 6.5em;
+	  line-height: 95px;
+	  padding: 0 29px;	  
+	}
+}
+.cv-close a{
+	text-decoration: none;
+	color: #bbb;
+}
+.cv-close a:hover{
+	color: #555;
+}
+.cv-about{
+	padding: 2em 0;
+
+}
+.cv-objective{
+	color: #777;
+	font-size: 1.4em;
+	font-family: georgia;
+}
+.cv-objective span{
+	font-weight: 500;
+}
+.cv-contacts{
+	list-style: none;
+  padding: 0;
+  font-size: 1.1em;
+  font-family: 'Georgia';
+  line-height: 26px;
+  color: #3c3c3c;
+}
+.cv-contacts .fa{
+	 width: 24px;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 10px;
+  color: #aaa;
+}
+.cv-contacts a{
+	color: #3c3c3c;
+}
+#cv-achievements h4{
+	color: #3c3c3c;
+	display: inline-block;
+}
+#cv-experience, #cv-skills, #cv-achievements, #cv-education{
+	color: #555;
+	font-size: 1.1em;
+	font-family: 'Georgia';
+	margin-top: 2em;
+}
+#cv-experience h3, #cv-skills h3, #cv-achievements h3, #cv-education h3{
+	margin-top: 0;
+	color: #3c3c3c;
+}
+.cv-work-item, .cv-border-left{  
+	border-left: 1px solid #ddd;
+  	margin-bottom: 2em;
+}
+.cv-company{
+	margin-bottom: 5px;
+}
+.cv-position{
+	font-style: italic;
+	margin-bottom: 0;
+}
+.cv-website a{
+	color: #888;
+}
+.cv-date p{
+	font-size: .9em;
+}
+.cv-date-xs{
+	margin-bottom: 0;
+}
+.cv-skills-item{
+	margin-bottom: 15px;
+}
+.cv-skills-item h4{
+	color: #3c3c3c;
+	font-weight: 500;
+	margin-bottom:  5px;
+}
+.cv-references{
+	text-align: center;
+	margin-bottom: 1.5em;
+}
