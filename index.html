@@ -319,26 +319,22 @@
                         	<div class="col-sm-8">
                             	<h3 class="hidden-xs">Leave a message</h3>
                                 <form action="https://formspree.io/anj.tugade@gmail.com" method="POST">
-                                    <input type="hidden" name="_next" value="//site.io/thanks.html" />
+                                    <input type="hidden" name="_next" value="/thanks.html" />
+                                    <input type="hidden" name="_subject" value="New submission!" />
                                     <fieldset>
                                         <div class="form-group">
                                             <label for="firstname" class="sr-only">First Name</label>
-                                            <input type="text" class="form-control" placeholder="First Name" id="firstname">
+                                            <input type="text" class="form-control" placeholder="First Name" name="name">
                                         </div>
-                                        
-                                        <div class="form-group">
-                                            <label for="lastname" class="sr-only">Last Name</label>
-                                            <input type="text" class="form-control" placeholder="Last Name" id="lastname">
-                                        </div>
-                                        
+                                                
                                         <div class="form-group">
                                             <label for="email" class="sr-only">Email</label>
-                                            <input type="email" class="form-control" placeholder="Email" id="email">
+                                            <input type="email" class="form-control" placeholder="Email" name="_replyto">
                                         </div>
                                         
                                         <div class="form-group">
                                             <label for="message" class="sr-only">Message</label>
-                                            <textarea class="form-control" placeholder="Message" id="message"></textarea>
+                                            <textarea class="form-control" placeholder="Message" name="message"></textarea>
                                         </div>
                                         
                                         <button class="btn btn-primary">Send message</button>
