@@ -167,13 +167,7 @@
 
     </section>
 
-    <div style="background: #CA8B9A;">
-        <div class="col-md-12 text-center">
-            <a id="skills-toggle" class="btn btn-primary"><i class="fa fa-arrow-circle-o-down"></i> Check my skills</a>
-            </div>
-    </div>
-
-    <section id="separator" class="content-first">
+    <section id="separator" class="content-first hidden-xs">
         <div id="skills">
             <div class="container">   
                 <div class="row"><!-- Toogle my skills start --> 
@@ -195,9 +189,8 @@
         </div>
     </section>
 
-    <section id="portfolio" class="content-second">
+    <section id="portfolio" class="content-white">
         <h2 class="scrollpoint sp-effect3">Some of my works</h2>
-        <!--<p class="scrollpoint sp-effect3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in turpis quam. Nulla quis eleifend lectus.</p>--> 
    		<ul class="grid cs-style-4">
 				<li>
                     <a href="#portfolioModal1" class="portfolio-link visible-xs visible-sm" data-toggle="modal">
@@ -287,39 +280,7 @@
     
 	</section>
 
-    <!-- <section id="testimonials" class="content-first">
-        <div class="container">
-        	<h2 class="scrollpoint sp-effect3 text-center">Testimonials</h2>
-        	<p class="scrollpoint sp-effect3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in turpis quam. Nulla quis eleifend lectus.</p> 
-            <div class="row">
-            	
-                <div class="col-sm-6 scrollpoint sp-effect1">
-                    <div class="media">
-                        <a class="pull-left" href="#"><img class="media-object img-circle" src="images/tom.png" alt=""></a>
-                        <div class="media-body">
-                            <h4 class="media-heading">Angie Tugade</h4>
-                            <span>Webdesigner</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed volutpat est. Donec lobortis interdum volutpat. Maecenas bibendum dui quis pharetra tincidunt. Praesent posuere eu velit at scelerisque.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 scrollpoint sp-effect2">
-                    <div class="media">
-                        <a class="pull-left" href="#"><img class="media-object img-circle" src="images/suzanne.png" alt=""></a>
-                        <div class="media-body">
-                            <h4 class="media-heading">Angie Tugade</h4>
-                            <span>Webdesigner</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed volutpat est. Donec lobortis interdum volutpat. Maecenas bibendum dui quis pharetra tincidunt. Praesent posuere eu velit at scelerisque.</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            
-        </div>
-    </section> -->
-
-    <section id="contact" class="content-first">
+    <section id="contact" class="content-second">
         <div class="container">
         	<h2 class="scrollpoint sp-effect3">Contact me</h2>
             <div class="row">
@@ -331,23 +292,24 @@
                     	<div class="row scrollpoint sp-effect4">
                         	<div class="col-sm-8">
                             	<h3 class="hidden-xs">Leave a message</h3>
+                                <p class="scrollpoint sp-effect3 hidden-xs">I would love to hear from you. Drop me a line, whether it is a praise or criticism, a question, a suggestion, or just a hello. I am currently available for new projects, so if you have a request drop a message and i'll get back to you as soon as possible!</p>
                                 <form action="https://formspree.io/anj.tugade@gmail.com" method="POST">
                                     <input type="hidden" name="_next" value="/thanks.html" />
                                     <input type="hidden" name="_subject" value="New submission!" />
                                     <fieldset>
                                         <div class="form-group">
                                             <label for="firstname" class="sr-only">First Name</label>
-                                            <input type="text" class="form-control" placeholder="First Name" name="name">
+                                            <input type="text" class="form-control" placeholder="First Name" name="name" required>
                                         </div>
                                                 
                                         <div class="form-group">
                                             <label for="email" class="sr-only">Email</label>
-                                            <input type="email" class="form-control" placeholder="Email" name="_replyto">
+                                            <input type="email" class="form-control" placeholder="Email" name="_replyto" required>
                                         </div>
                                         
                                         <div class="form-group">
                                             <label for="message" class="sr-only">Message</label>
-                                            <textarea class="form-control" placeholder="Message" name="message"></textarea>
+                                            <textarea class="form-control" placeholder="Message" name="message" required></textarea>
                                         </div>
                                         
                                         <button class="btn btn-primary">Send message</button>
@@ -516,8 +478,6 @@
         
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="plugins/creative-brands/creative-brands.js"></script>
     <script src="plugins/easy-pie-chart/jquery.easy-pie-chart.js"></script>
     <script src="plugins/modernizr/modernizr.custom.js"></script>
     <script src="plugins/waypoints/waypoints.min.js"></script>

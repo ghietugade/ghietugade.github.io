@@ -62,6 +62,16 @@ h4 {
 	text-align:center;
 }
 
+.content-white {
+	background-color:#f2f2f2;
+	padding:80px 0;
+	color:#FFFFFF;
+	border-top:8px inset #333;
+	border-top:8px solid rgba(0,0,0,0.1);
+	box-shadow:0px 1px 0px rgba(255,255,255,0.2);
+	text-align:center;
+}
+
 .scrollpoint {
 	opacity:0;
 }
@@ -199,9 +209,9 @@ h4 {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	transition-duration:0.7s;
-	color:#16A085;
-	border-left:4px solid #16A085;
+	transition-duration: 0.7s;
+    color: #efa8bd;
+    border-bottom: 1px solid #efa8bd;
 }
 
 .navbar-collapse {
@@ -486,7 +496,7 @@ header {
 	SERVICES
 ------------------------------*/
 .service:hover > h3 {
-	color:#34495E;
+	color:#4c331e;
 	transition-duration:0.5s;
 }
 
@@ -616,11 +626,12 @@ blockquote footer {
 
 .grid li {
 	display: inline-block;
-	max-width: 350px;
-	margin: 0;
-	padding: 20px;
-	text-align: left;
-	position: relative;
+    max-width: 350px;
+    margin: 20px;
+    padding: 0px;
+    text-align: left;
+    position: relative;
+    border: 5px solid #ffffff;
 }
 
 .grid figure {
@@ -971,18 +982,24 @@ blockquote footer {
 #contact h3 {
 	text-align:left;
 	margin:0 0 20px;
-	color:#333333;
+	color:#4c331e;
 	font-weight:bold;
 	font-size:26px;
 }
-
+#contact p {
+	text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+    color: #6f665e;
+}
 #contact .form-control {
-	box-shadow:none;
-	border-radius:5px;
-	background-color:#FFFFFF;
-	border:0;
-	margin-bottom:22px;
-	height:38px;
+	box-shadow: none;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 0;
+    margin-bottom: 15px;
+    height: 46px;
+    color: #6f665e;
 }
 
 #contact textarea.form-control {
@@ -1026,7 +1043,7 @@ blockquote footer {
 ------------------------------*/
 
 #footer {
-	background-color:#2F4254;
+	background-color:#4c331e;
 	text-align:center;
 	padding:40px 0;
 	color:#FFFFFF;
@@ -1036,15 +1053,13 @@ blockquote footer {
 }
 
 #footer .brands li a {
-	color:#16A085;
-	
+	color:#FFFFFF;
 	border-radius:50px;
 	border:0;
 }
 
 #footer .brands li a:hover {
-	color:#FFFFFF;
-	background-color:#283848;
+	background-color:#efa8bd;
 }
 
 #footer p {
@@ -1434,6 +1449,9 @@ blockquote footer {
 }
 
 /***** PORTFOLIO MODALS ******/
+#portfolio h2{
+	color: #895b68;
+}
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
