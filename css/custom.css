@@ -998,15 +998,15 @@ blockquote footer {
 }
 
 #contact .contact-info {
-	background-color:#1ABC9C;
-	border-radius:5px;
-	color:#FFFFFF;
-	padding:0 12px;
-	text-align:left;
+	background-color: #e4dcdf;
+    border-radius: 5px;
+    color: #92788c;
+    padding: 0 12px;
+    text-align: left;
 }
 
 #contact .contact-info p {
-	border-bottom:2px dashed #16A085;
+	border-bottom:2px dashed #d4c6d1;
 	margin:0;
 	padding:12px 0;
 	font-weight:bold;
