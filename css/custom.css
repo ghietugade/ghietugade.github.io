@@ -45,7 +45,7 @@ h4 {
 
 .content-first {
 	background-color:#62462E;
-	padding:80px 0;
+	padding:60px 0;
 	color:#FFFFFF;
 	border-top:8px inset #333;
 	border-top:8px solid rgba(0,0,0,0.1);
@@ -54,7 +54,7 @@ h4 {
 
 .content-second {
 	background-color:#CA8B9A;
-	padding:80px 0;
+	padding:60px 0;
 	color:#FFFFFF;
 	border-top:8px inset #333;
 	border-top:8px solid rgba(0,0,0,0.1);
@@ -64,7 +64,7 @@ h4 {
 
 .content-white {
 	background-color:#f2f2f2;
-	padding:80px 0;
+	padding:60px 0;
 	color:#FFFFFF;
 	border-top:8px inset #333;
 	border-top:8px solid rgba(0,0,0,0.1);
@@ -245,42 +245,49 @@ header {
 .header-social-links a{
 	padding-left: 5px;
 }
-.jumbotron {
+.hero-page {
 	margin:0;
   	background-color:#f2f2f2;
+  	padding: 30px;
 }
-.jumbotron .hero-img{
+@media screen and (min-width: 768px){
+	.hero-page {
+	    padding-top: 48px;
+	    padding-bottom: 48px;
+	}
+}
+.hero-page .hero-img{
 	  position: relative;
 	  max-width: 350px;
 	  margin: 0 auto;
 }
 @media (max-width: 767px){
-	.jumbotron .hero-img{
+	.hero-page .hero-img{
 	  max-width: 260px;
 	}
 }
-.jumbotron img {
+.hero-page img {
 	margin:0 auto 0 auto;
 	max-height:350px;
 	margin-bottom:15px;
 }
-.jumbotron .hero-blink{
+.hero-page .hero-blink{
 	  position: absolute;
 	  top: 72px;
 	  left: 145px;
 	  display: none;
 }
 @media (max-width: 767px){
-	.jumbotron .hero-blink{
+	.hero-page .hero-blink{
 	  	top: 41px;
 	  	left: 113px;
 	}
 }
-.jumbotron .hero-blink img{
+.hero-page .hero-blink img{
 	 width: 72px;
 }
 @media (max-width: 767px){
-	.jumbotron .hero-blink img{
+	.hero-page .hero-blink img{
 		width: 40px;
 	}
 }
@@ -330,7 +337,7 @@ header {
 	margin-bottom:15px;
 }
 
-.jumbotron .btn {
+.hero-page .btn {
 	margin-right:15px;
 }
 
@@ -496,14 +503,25 @@ header {
 	SERVICES
 ------------------------------*/
 .service:hover > h3 {
-	color:#4c331e;
 	transition-duration:0.5s;
 }
-
+@media (max-width: 767px){
+	.service h3{
+	  	margin-top: 0;
+	}
+}
 .service > p {
 	line-height:22px;
 }
-
+.service img{
+  	max-width: 150px;
+  	margin: 0 auto;
+}
+@media (min-width: 768px){
+	.service img{
+	  	max-width: 100%;
+	}	
+}
 #services {
 	height:680px;
 }
@@ -1220,7 +1238,7 @@ blockquote footer {
 		font-size:38px;
 	}
 	
-	.jumbotron img {
+	.hero-page img {
 		max-height:200px;
 	}
 	
@@ -1416,7 +1434,7 @@ blockquote footer {
 
 @media (max-width:320px) {
 	
-	.jumbotron .btn {
+	.hero-page .btn {
 		margin-bottom:15px;
 		margin-right:0px;
 	}
@@ -1444,6 +1462,13 @@ blockquote footer {
 	
 	.pricing-table {
 		margin:0;
+	}
+
+	.social-wrapper h2 {
+		font-size:30px;
+	}
+	.social-wrapper h4{
+		font-size: 2em;
 	}
 	
 }

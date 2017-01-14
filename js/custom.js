@@ -1,21 +1,23 @@
-$(window).scroll(function(){
-	if($(window).scrollTop() > 600) {
-		$('.navbar-default').fadeIn(100);
-	}
-	else {
-		$('.navbar-default').fadeOut(100);
-	}
-	
-	if($(window).width() > 767) {
-		if ($(this).scrollTop() > 600) {
-			$('.scroll-up').fadeIn(300);
-		} else {
-			$('.scroll-up').fadeOut(300);
-		}		
-	}
-});
-
 $(document).ready(function() {
+	var windowHeight =  $(window).height();
+	$('.hero-page').css('min-height', windowHeight);
+
+	$(window).scroll(function(){
+		if($(window).scrollTop() > windowHeight-50) {
+			$('.navbar-default').fadeIn(100);
+		}
+		else {
+			$('.navbar-default').fadeOut(100);
+		}
+		
+		if($(window).width() > 767) {
+			if ($(this).scrollTop() > windowHeight-50) {
+				$('.scroll-up').fadeIn(300);
+			} else {
+				$('.scroll-up').fadeOut(300);
+			}		
+		}
+	});
 
 	setTimeout (function() {	
 		$('.hero-blink').show();
@@ -31,18 +33,20 @@ $(document).ready(function() {
 	    }
 	});
 
-    // setTimeout() function will be fired after page is loaded
-    // it will wait for 5 sec. and then will fire
-    // $("#successMessage").hide() function
-    /*setTimeout(function() {
-        $(".hero-blink").hide('blind', {}, 500)
-    }, 3000);*/
-
+   
 	$("a.scroll[href^='#']").on('click', function(e) {
 		e.preventDefault();
 		var hash = this.hash;
-		$('html, body').animate({ scrollTop: $(this.hash).offset().top}, 1000, function(){window.location.hash = hash;});
+		$('html, body').animate({ scrollTop: $(this.hash).offset().top - 50}, 1000, function(){window.location.hash = hash;});
+
+		if($(window).width() < 768) {
+			$(".nav a").on('click', function(e) {
+				$(".navbar-toggle").trigger("click");
+			});
+		}
 	});
+
+
 	$('#skills').mouseenter(function() {
 		$('.chart').easyPieChart({
 				barColor: '#DB4F58',
