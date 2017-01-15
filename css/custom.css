@@ -1475,7 +1475,7 @@ blockquote footer {
 
 /***** PORTFOLIO MODALS ******/
 #portfolio h2{
-	color: #895b68;
+	color: #2c3f52;
 }
 .portfolio-modal .modal-content {
     padding: 100px 0;
@@ -1566,4 +1566,14 @@ blockquote footer {
 	.portfolio-link{
 		position: relative;
 	}
+}
+
+
+/****** THANK YOU PAGE *******/
+.ty-container .hero-page{
+	background: #fff;
+	text-align: center;
+}
+.ty-container .hero-page h3{
+	color: #945723;
 }

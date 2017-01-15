@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 	$(window).scroll(function(){
 		if($(window).scrollTop() > windowHeight-50) {
-			$('.navbar-default').fadeIn(100);
+			$('.navbar-default').show();
 		}
 		else {
 			$('.navbar-default').fadeOut(100);
