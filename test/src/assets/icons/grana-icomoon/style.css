@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'grana-icomoon';
+  src:  url('fonts/grana-icomoon.eot?zguhpk');
+  src:  url('fonts/grana-icomoon.eot?zguhpk#iefix') format('embedded-opentype'),
+    url('fonts/grana-icomoon.ttf?zguhpk') format('truetype'),
+    url('fonts/grana-icomoon.woff?zguhpk') format('woff'),
+    url('fonts/grana-icomoon.svg?zguhpk#grana-icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="grana-icon--"], [class*=" grana-icon--"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'grana-icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.grana-icon--arrow-left:before {
+  content: "\e900";
+}
+.grana-icon--arrow-right:before {
+  content: "\e901";
+}
+

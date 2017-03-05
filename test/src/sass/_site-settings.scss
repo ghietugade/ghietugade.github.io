@@ -1,0 +1,146 @@
+/* ===========================
+   Site Settings
+   =========================== */
+
+// Fonts
+// -----------------------------
+$font: (
+	family:				'SofiaPro',
+	weight:				300,
+	weight-bold:		400,
+	letter-spacing:		-0.025em
+);
+
+// = Colors
+// -----------------------------
+
+$gray: #919191;
+$dark-gray: #313131;
+$light-gray: #f4f4f4;
+$blue: #0083c3;
+$blue2: #3493c1;
+
+// = Palettes
+// -----------------------------
+$palette: (
+	bg:					$light-gray,
+	font:				$dark-gray
+);
+
+// = Grid
+// -----------------------------
+
+// Max width wrapper
+$wrapper-width: pxtoem(1140, 16);
+
+
+// = Screen Sizes
+// -----------------------------
+
+// Extra small screen / phone (xs , 480)
+$screen-xs: 480px !default;
+
+// Small screen / tablet (sm , 768)
+$screen-sm: 767px !default;
+
+// Medium screen / desktop (md , 992)
+$screen-md: 992px !default;
+
+// Large screen / wide desktop (lg , 1200)
+$screen-lg: 1200px !default;
+
+// Extra Large screen (xlg, 1600)
+$screen-xlg: 1600px !default;
+
+// Full HD screen (hd , 1900)
+$screen-hd: 1900px !default;
+
+// Retina screen (retina , 192dpi)
+$screen-retina: 192dpi !default;
+$screen-retina-ratio: 2 !default;
+
+// Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width: 30px;
+
+// Collapsable nav breakpoint
+$grid-float-breakpoint: $screen-md;
+
+
+
+/********************************/
+/******** Media Query ***********/
+/********************************/
+// Default styling should be mobile first with
+// desktop and tablet specifics used to extend.
+// i.e. use '+media-min-[xx]' (except xs, 480px)
+
+// Method to Use:
+// e.g. @media (min-width: 768px) {
+//       ....
+//      }
+// i.e. @include media-min-sm
+//       ....
+// e.g. @media (max-width: 480px) {
+//       ....
+//      }
+// i.e. @include media-max-xs
+//      ....
+
+// Extra small screen / phone (xs , 480)
+@mixin media-min-xs{
+  @media (min-width: #{$screen-xs}){
+    @content
+  }
+}
+@mixin media-max-xs{
+  @media (max-width: #{$screen-xs}){
+    @content
+  }
+}
+// Small screen / tablet (sm , 768)
+@mixin media-min-sm{
+  @media (min-width: #{$screen-sm}){
+    @content
+  }
+}
+// Medium screen / desktop (md , 992)
+@mixin media-min-md{
+  @media (min-width: #{$screen-md}){
+    @content
+  }
+}
+// Large screen / wide desktop (lg , 1200)
+@mixin media-min-lg{
+  @media (min-width: #{$screen-lg}){
+    @content
+  }
+}
+// Extra Large screen (xlg, 1600)
+@mixin media-min-xlg{
+  @media (min-width: #{$screen-xlg}){
+    @content
+  }
+}
+// Full HD screen (hd , 1900)
+@mixin media-min-hd{
+  @media (min-width: #{$screen-hd}){
+    @content
+  }
+}
+// Retina screen (retina , 192dpi)
+@mixin media-retina{
+  @media (-webkit-min-device-pixel-ratio: #{$screen-retina-ratio}), (min-resolution: #{$screen-retina}){
+    @content
+  }
+}
+// Custom Media Query
+@mixin media-max-size($size){
+  @media (max-width: $size){
+    @content
+  }
+}
+@mixin media-min-size($size){
+  @media (min-width: $size){
+    @content
+  }
+}

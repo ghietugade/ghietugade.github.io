@@ -1,0 +1,46 @@
+/* ===========================
+   Base
+   =========================== */
+@font-face {
+	font-family: 'SofiaPro';
+	src: url('../../src/assets/fonts/SofiaProRegular.eot'); /* IE9 Compat Modes */
+	src: url('../../src/assets/fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       	url('../../src/assets/fonts/SofiaProRegular.woff2') format('woff2'), /* Super Modern Browsers */
+       	url('../../src/assets/fonts/SofiaProRegular.woff') format('woff'), /* Pretty Modern Browsers */
+       	url('../../src/assets/fonts/SofiaProRegular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       	url('../../src/assets/fonts/SofiaProRegular.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+  	font-style: normal;
+}
+
+
+body, input, select, textarea {
+	font-family: map-get($font, family);
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: map-get($palette, bg);
+	color: map-get($palette,font);
+	font-size: 14px;
+	@include media-min-sm {
+		font-size: 15px;
+	}
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a { 
+	color: $blue; 
+	text-decoration: none;
+	&:hover { 
+		color: $blue2;
+	}
+}
+
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1;}
