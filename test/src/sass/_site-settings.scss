@@ -1,7 +1,3 @@
-/* ===========================
-   Site Settings
-   =========================== */
-
 // Fonts
 // -----------------------------
 $font: (
@@ -66,10 +62,8 @@ $grid-gutter-width: 30px;
 $grid-float-breakpoint: $screen-md;
 
 
-
-/********************************/
-/******** Media Query ***********/
-/********************************/
+// = Media Queries
+// -----------------------------
 // Default styling should be mobile first with
 // desktop and tablet specifics used to extend.
 // i.e. use '+media-min-[xx]' (except xs, 480px)
@@ -143,4 +137,29 @@ $grid-float-breakpoint: $screen-md;
   @media (min-width: $size){
     @content
   }
+}
+
+
+// = Other Mixins
+// -----------------------------
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transform($radius) {
+  -webkit-transform: $radius;
+      -ms-transform: $radius;
+          transform: $radius;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+      -ms-transition: $transition;
+      -o-transition: $transition;
+          transition: $transition;
 }

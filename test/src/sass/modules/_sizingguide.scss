@@ -38,16 +38,31 @@
 	  	left: 0; 
 	  	top: 0; 
 	  	&-item{
-	  		max-width: 385px;
 	  		float: left; 
 	  		list-style: none; 
-	  		margin-right: 20px;
-	  		img{
-	  			max-width: 250px;
-	  			@include media-min-xs{
-	  				max-width: 300px;
-	  			}
-	  		}
+	  		//max-width: 640px;
+	  		@include media-min-sm{
+		  		margin-right: 20px;
+		  		max-width: 385px;
+		  	}
+	  		&-model{
+	  			display: block;
+	  			@include media-min-sm{
+	  				@include transition(all .2s ease-in-out);
+		  			min-height: 450px;
+		  			&:hover{
+			  			@include transform(scale(1.1));
+			  		}
+		  		}
+		  		img{
+		  			display: block;
+		  			max-width: 250px;
+		  			margin: 0 auto;
+		  			@include media-min-xs{
+		  				max-width: 300px;
+		  			}
+		  		}
+		  	}
 	  		&-desc{
 	  			text-align: center;
 	  			span{
@@ -71,12 +86,7 @@
 			    margin: 0 10px;
 			    overflow: hidden;
 			    cursor: pointer;
-			    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-			    -webkit-transition: all 0.3s ease-in-out;
-			    -moz-transition: all 0.3s ease-in-out;
-			    -ms-transition: all 0.3s ease-in-out;
-			    -o-transition: all 0.3s ease-in-out;
-			    transition: all 0.3s ease-in-out;
+			    @include transition(all 0.3s ease-in-out);
 			    @include media-min-xs{
 			    	color: $dark-gray;
 			    }

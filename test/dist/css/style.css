@@ -1,14 +1,3 @@
-/* ===========================
-   Site Settings
-   =========================== */
-/********************************/
-/******** Media Query ***********/
-/********************************/
-/* Vendor */
-/* Override */
-/* ===========================
-   Base
-   =========================== */
 @font-face {
   font-family: 'SofiaPro';
   src: url("../../src/assets/fonts/SofiaProRegular.eot");
@@ -82,15 +71,28 @@ a {
     left: 0;
     top: 0; }
     .m-sizing-guide__slider-item {
-      max-width: 385px;
       float: left;
-      list-style: none;
-      margin-right: 20px; }
-      .m-sizing-guide__slider-item img {
-        max-width: 250px; }
-        @media (min-width: 480px) {
-          .m-sizing-guide__slider-item img {
-            max-width: 300px; } }
+      list-style: none; }
+      @media (min-width: 767px) {
+        .m-sizing-guide__slider-item {
+          margin-right: 20px;
+          max-width: 385px; } }
+      .m-sizing-guide__slider-item-model {
+        display: block; }
+        @media (min-width: 767px) {
+          .m-sizing-guide__slider-item-model {
+            transition: all 0.2s ease-in-out;
+            min-height: 450px; }
+            .m-sizing-guide__slider-item-model:hover {
+              -webkit-transform: scale(1.1);
+              transform: scale(1.1); } }
+        .m-sizing-guide__slider-item-model img {
+          display: block;
+          max-width: 250px;
+          margin: 0 auto; }
+          @media (min-width: 480px) {
+            .m-sizing-guide__slider-item-model img {
+              max-width: 300px; } }
       .m-sizing-guide__slider-item-desc {
         text-align: center; }
         .m-sizing-guide__slider-item-desc span {
@@ -109,7 +111,6 @@ a {
       margin: 0 10px;
       overflow: hidden;
       cursor: pointer;
-      text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
       transition: all 0.3s ease-in-out; }
       @media (min-width: 480px) {
         .m-sizing-guide__slider-controls div {
