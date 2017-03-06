@@ -1,8 +1,10 @@
 .m-sizing-guide {
 	overflow: hidden;
 	padding: 50px 0;
-	@include media-min-sm{
+	@include media-min-lg{
 		padding: 70px 0;
+		width: 1200px;
+		margin: 0 auto;
 	}
 	&__header{
 	  	text-align: center;
@@ -81,14 +83,16 @@
 	  			color: $gray;
 			    display: block;
 			    position: absolute;
-			    top: 35%;
+			    top: 30%;
 			    z-index: 10;
 			    margin: 0 10px;
 			    overflow: hidden;
 			    cursor: pointer;
+			    padding: 20px 10px;
 			    @include transition(all 0.3s ease-in-out);
 			    @include media-min-xs{
 			    	color: $dark-gray;
+			    	padding: 0
 			    }
 			    &:hover{
 			    	opacity: 0.5;

@@ -1,3 +1,11 @@
+/* ====================================
+   Grana Front-end developer Evaluation
+
+   @author: Angie Tugade
+   @website: www.angietugade.info
+   ==================================== */
+
+
 var SizeGuideSlider = (function(){
   var $slider = $(".m-sizing-guide__slider"),
       $sliderWrap = $(".m-sizing-guide__slider-wrap"),
