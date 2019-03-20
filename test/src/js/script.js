@@ -2,7 +2,7 @@
    Grana Front-end developer Evaluation
 
    @author: Angie Tugade
-   @website: www.angietugade.info
+   @website: www.angietugade.com
    ==================================== */
 
 
